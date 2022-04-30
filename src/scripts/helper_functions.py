@@ -30,17 +30,11 @@ def position_tables(df, columns):
     context_columns = [i[columns] for i in df]
     return context_columns
 
-# def scoring_team_by_season()
-
-# j = position_tables(dfs, cols)
-
-# print(j)
 
 
 def add_index(dataset):
     tables = [pd.DataFrame() for x in range(len(dataset))]
     index = [i.groups.keys() for i in dataset]
-    combine = list(zip(tables,index))
     for i in range(len(dataset)):
         tables[i].index = list(index[i])
     return tables
@@ -85,6 +79,12 @@ def transform(dataset,stage):
     for data in dataset:
         data.sort_values(by="Points",inplace=True,ascending=False)
     return dataset
+
+
+def best_score_season(path):
+    data = glob.glob(path)
+    data = sorted([i[11:22] for i in data])
+
 
 
 
