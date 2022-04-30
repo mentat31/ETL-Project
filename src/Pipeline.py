@@ -20,25 +20,16 @@ def create_position_tables(df):
     df = list(map(lambda x: x[cols], df))
 
     seasons = pd.Series((map(lambda x: x.groupby("HomeTeam"), df)))
-
+    tables = [pd.DataFrame() for x in range(len(seasons))]
 
     indexed = add_index(seasons)
+    columned = add_cols(indexed)
 
-    tables = [pd.DataFrame() for x in range(len(seasons))]
-    for i in seasons:
-        index = [x.groups.keys() for x in seasons]
-        #i.set_index(index)
+    t = transform(columned,stage)
 
-    return index
-
+    return t
 
 test = create_position_tables(stage)
 
 
-#def printer(group):
-    #for name, group in group:
-        #print(name)
-        #print(group)
-
 print(test)
-#print(test.apply(lambda x: x.groups.keys()) )
