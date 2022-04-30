@@ -26,9 +26,9 @@ def clean_for_contex(func):
     return wrapper
 
 
-def position_tables(df, columns):
-    context_columns = [i[columns] for i in df]
-    return context_columns
+#def position_tables(df, columns):
+#    context_columns = [i[columns] for i in df]
+#    return context_columns
 
 
 
