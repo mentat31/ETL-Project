@@ -4,6 +4,7 @@ Hello, thank you for taking the time to review my submission as well as giving m
 demonstrate my skills.
 
 The executable is named Main.py, it can be run locally to generate the desired reports.
+Docstrings for Main.py are in Pipeline.py
 
 To run deployment, download the repository, cd into the folder of the project and run 
 docker run -v $(pwd)/reports:/app/reports mentat31/mmiteraetlproj:final
