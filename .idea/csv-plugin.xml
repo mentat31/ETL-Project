@@ -10,14 +10,21 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/reports/position_tablesseason-0910.csv">
+        <entry key="/reports/season-0910.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/reports/season-1819.csv">
+        <entry key="/reports/season-1112.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/reports/season-1213.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
