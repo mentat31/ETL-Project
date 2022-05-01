@@ -31,5 +31,5 @@ if __name__ == "__main__":
     make_tables = pipe.position_tables(dfs)
     best_team = pipe.best_team(source)
 
-    pipe.load([best_team], ["Best_Team_By_Season"], "reports/")
-    pipe.load(make_tables, sort_data, "reports/")
+    pipe.load([best_team], ["Best_Team_By_Season"], "../reports/")
+    pipe.load(make_tables, sort_data, "../reports/")
